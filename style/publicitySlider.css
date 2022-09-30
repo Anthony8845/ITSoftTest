@@ -4,15 +4,16 @@
     align-items: center; 
 }
 .image__container{
-    width: 468px;
+    /* overflow: hidden; */
+    width: 100vw;
     height: 270px;
     position: relative;
 }
 
 .img {
     position: absolute;
-    width: 468px;
-    height: 270px;
+    width: 100vw;
+    height: 276px;
 }
 .sliderImg {
     
