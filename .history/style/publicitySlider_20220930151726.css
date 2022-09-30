@@ -1,0 +1,48 @@
+.publicity__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image__container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    min-width: 200px;
+}
+
+.img {
+    width: 468px;
+    height: 276px;
+
+    
+}
+.sliderImg {
+    
+    background: url('../img/venarus900.png') center/ contain no-repeat;
+}
+.sliderImg2 {
+    display: none;
+    background: url('../img/venarus900.png') center/ contain no-repeat;
+}
+.sliderImg3 {
+    background: url('../img/venarus450.png') center/ contain no-repeat;
+}
+.sliderBtnl {
+    
+    background: url('../img/arrow.png') center no-repeat;
+    background-size: contain;
+}
+.sliderBtn {
+    cursor: pointer;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #5B0E58;
+    border-radius: 50%;
+    margin: 0 10px 10px 10px;
+}
+.sliderBtnR {
+
+}

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 320px;
+}
+
+.burgerMenu {
+    display: none;
+    position: absolute;
+    background-color: azure;
+    width: 320px;
+}
+
+.header {
+    display: flex;
+}
+
+.header__logo {
+    width: 135px;
+    height: 25px;
+    background: url('../img/logoMob.png') 0 0 no-repeat;
+    background-size: cover;
+}
+.header__search {
+    width: 135px;
+    height: 25px;
+    background: url('../img/searchMob.png') 0 0 no-repeat;
+    background-size: cover;
+}
