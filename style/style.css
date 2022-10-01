@@ -1,4 +1,5 @@
 @import url('./publicity.css');
+@import url('./salesSlider.css');
 
 * {
     margin: 0;
@@ -86,4 +87,85 @@ body {
     border: 1px solid #5B0E58;
     border-radius: 33.5px;
     background: none;
+}
+
+.action {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.action__benefits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.benefits__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.action .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.benefits__icon1 {
+    background: url('../img/benefitsIcon1.png') center/ contain no-repeat;
+}
+.benefits__icon2 {
+    background: url('../img/benefitsIcon2.png') center/ contain no-repeat;
+}
+.benefits__icon3 {
+    background: url('../img/benefitsIcon3.png') center/ contain no-repeat;
+}
+.benefits__text {
+
+}
+.action__complex {
+
+}
+
+.complex__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action__complex li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border:1px #5B0E58 ;
+    border-style: solid none ;
+    height: 80px;
+    padding: 10px 5px;
+    margin: 10px;
+}
+.action__complex a {
+    margin-right: 15px;
+}
+.complex__circlAnim {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #5B0E58;
+    border-radius: 50%;
+}
+.complex__text {
+    width: 180px;
+    white-space: wrap;
+}
+
+.anim1 {
+}
+.anim2 {
+}
+.anim3 {
+}
+.anim4 {
+}
+.anim5 {
 }

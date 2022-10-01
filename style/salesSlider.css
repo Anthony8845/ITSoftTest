@@ -1,0 +1,33 @@
+.sales__slider {
+    position: relative;
+    left: -8px;
+    width: 99vw;
+    overflow: hidden;
+    font-size: 25px;
+    color: #590D56;
+    display: flex;
+    padding-left: -9px;
+}
+
+.slider__text {
+    padding-top: 10px;
+    height: 50px;
+    border: 1px solid #590D56;
+    border-right-style: none;
+    border-left-style: none;
+    white-space: nowrap;
+    animation: slider__text 5s infinite linear;
+}
+
+.slider__text::after {
+    content: 'получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>';
+}
+
+@keyframes slider__text {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
