@@ -1,0 +1,30 @@
+.aboutProduction {
+    margin-top: 15px;
+    
+}
+.aboutProduction__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image {
+    /* width: 100vw; */
+    height: 300px;
+}
+.image .img {
+    width: 99vw;
+}
+.production__image1 {
+    background: url('../img/prodImage1Mob.png') center/ contain no-repeat;
+}
+.production__image2 {
+    background: url('../img/prodImage2.png') center/ contain no-repeat;
+}
+.production__arrow {
+
+}
+.slider_arrow_back {
+}
+.slider_arrow_front {
+    transform: scale(-1, 1);
+}

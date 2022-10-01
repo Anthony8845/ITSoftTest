@@ -24,12 +24,7 @@
     position: relative;
 }
 
-.img {
-    position: absolute;
-    width: 100vw;
-    height: 276px;
-    left: -2px;
-}
+
 .sliderImg {
     
     background: url('../img/venarus900.png') center/ contain no-repeat;
