@@ -1,0 +1,107 @@
+.publicity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    /* display: grid; */
+    
+}
+
+.publicity__header {
+    text-align: center;
+    white-space: pre-line;
+    font-size: 47px;
+}
+
+.publicity__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.image__container{
+    width: 100vw;
+    height: 270px;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    width: 100vw;
+    height: 276px;
+    left: -2px;
+}
+.sliderImg {
+    
+    background: url('../img/venarus900.png') center/ contain no-repeat;
+}
+.sliderImg2 {
+    display: none;
+    background: url('../img/venarus900.png') center/ contain no-repeat;
+}
+.sliderImg3 {
+    display: none;
+    background: url('../img/venarus450.png') center/ contain no-repeat;
+}
+.sliderBtnl div{
+    
+}
+.sliderBtn {
+    cursor: pointer;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #5B0E58;
+    border-radius: 50%;
+    margin: 0 10px 10px 10px;
+}
+.sliderBtn div {
+    width: 14px;
+    height: 14px;
+    background: url('../img/arrow.png') no-repeat;
+    background-size: contain;
+    margin: 9px 11px;
+}
+
+.sliderBtnR {
+    transform: scale(-1, 1);
+}
+
+.publicity__nav {
+    margin-top: 10px;
+    width: 100vw;
+}
+
+.publicity__nav .nav__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.nav__container li{
+    display: flex;
+    align-items: center;
+    margin: 10px 30px;
+    
+}
+.publicity__nav a {
+    color: #590D56;
+}
+.publicity__nav div {
+    display: inline-block;
+    
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.nav__icon1 {
+    background: url('../img/nav__icon1.png') center/ contain no-repeat;
+}
+.nav__icon2 {
+    background: url('../img/nav__icon2.png') center/ contain no-repeat;
+}
+.nav__icon3 {
+    background: url('../img/nav__icon3.png') center/ contain no-repeat;
+}
