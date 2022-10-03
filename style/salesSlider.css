@@ -21,6 +21,7 @@
 
 .slider__text::after {
     content: 'получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>';
+    
 }
 
 @keyframes slider__text {

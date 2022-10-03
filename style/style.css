@@ -1,6 +1,13 @@
 @import url('./publicity.css');
 @import url('./salesSlider.css');
 @import url('./production.css');
+@import url('./expertOpinion.css');
+@import url('./info.css');
+@import url('./buy.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+
 
 * {
     margin: 0;
@@ -8,14 +15,18 @@
     box-sizing: border-box;
 }
 
+h2 {
+    margin-bottom: 5px;
+}
+
 li {
     list-style-type: none;
 }
 
 body {
+    font-family: 'Roboto';
     max-width: 500px;
     min-width: 320px;
-    /* overflow: hidden; */
     margin: 0 auto;
 }
 
@@ -60,7 +71,7 @@ body {
 }
 
 .icon {
-    margin: 0 5px
+    margin: 0 5px;
 }
 
 .header__burgerbtn {
@@ -94,6 +105,12 @@ body {
     border: 1px solid #5B0E58;
     border-radius: 33.5px;
     background: none;
+}
+
+.btn:hover {
+    color: white;
+    background: #47093E;
+    transition: .2s;
 }
 
 .action {
@@ -181,4 +198,87 @@ body {
 .anim4 {
 }
 .anim5 {
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    padding: 30px 0 0 0;
+    background: linear-gradient(360deg, rgba(71, 9, 62, 0.5) -7.14%, rgba(255, 255, 255, 0) 100%);
+    background-blend-mode: multiply
+}
+
+.footer {
+    max-width: 500px;
+    /* width: 95vw; */
+    padding: 50px 0 10px 0;
+    
+}
+
+
+.footer__header {
+    color: #540C50;
+}
+.footer__container {
+
+    margin: 10px 0 0 0;
+    color: #000;
+}
+
+.footer__container div {
+    margin: 5px 0;
+}
+.footer__container a {
+    opacity: 0.5;
+    color: #000;
+    text-decoration: none;
+}
+.footer__container a:active {
+    color: #000;
+}
+
+.footer__container p {
+}
+
+.footerLink {
+    padding: 10px 0;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.iconFooter {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.social__icon_vk {
+    background: url('../img/vk.png') center/contain no-repeat;
+}
+.social__icon_facebook {
+    background: url('../img/facebook.png') center/contain no-repeat ;
+}
+.social__icon_twitter {
+    background: url('../img/twitter.png') center/contain no-repeat;
+}
+.social__icon_ok {
+    background: url('../img/ok.png') center/contain no-repeat;
+}
+.footer__ad {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.footer__logo {
+    width: 85px;
+    height: 30px;
+    background: url('../img/logoFooter.png') center/contain no-repeat;
 }

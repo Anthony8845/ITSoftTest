@@ -1,0 +1,84 @@
+.info {
+    height: 470px;
+    margin: 30px 0 10px 0;
+}
+.info__header {
+}
+.info__card {
+    position: relative;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 1fr 1fr ;
+    gap: 0 0;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card1 card4 card4";
+    max-width: 95vw;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+.card__img{
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 0;
+}
+.card .card__img h3 {
+    position: absolute;
+    text-align: left;
+    padding: 20px 0 0 10px;
+    font-size: 16px;
+    color: white;
+    white-space: pre-line;
+}
+
+.card__img1{
+    background: url('../img/info1mob.png') center/ cover  no-repeat;
+
+}
+.card__img2{
+    background: url('../img/info2mob.png') center/ cover no-repeat;
+}
+.card__img3{
+    background: url('../img/info3mob.png') center/ cover no-repeat;
+}
+.card__img4{
+    background: #5f4e5d;
+}
+
+.grad {
+    height: 100%;
+    background: linear-gradient(180deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%);
+    
+}
+
+.card {
+    background: #5f4e5d;
+}
+
+.card__img:hover{
+    background: #47093E;
+    transition: 0.4s;
+}
+
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+}
+.card3 {
+    grid-area: card3;
+}
+.card4 {
+    grid-area: card4;
+}
+
+.info__btn {
+    display: flex;
+    justify-content: center;
+}
