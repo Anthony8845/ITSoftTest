@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mediaQuery.css">
     <!-- <link rel="stylesheet" href="./style/publicitySlider.css"> -->
     <title>Venarus</title>
 </head>
@@ -35,27 +36,38 @@
         </div>
 
         <div class="publicity">
+            <div class="wave">
+                <div class="upL"></div>
+                <div class="upR"></div>
+                <div class="mid"></div>
+                <div class="down"></div>
+            </div>
             <h1 class="publicity__header">НАДЕЖНЫЙ 
                 ПОМОЩНИК 
                 В ЛЕЧЕНИИ
                 ВАРИКОЗА
             </h1>
-            <div class="publicity__slider">
-                <div class="image__container">
-                    <div class="sliderImg img"></div>
-                    <div class="sliderImg2 img"></div>
-                    <div class="sliderImg3 img"></div>
+            <div class="slider__container">
+                <div class="publicity__slider">
+                    <div class="image__container">
+                        <div class="sliderImg img"></div>
+                        <div class="sliderImg2 img"></div>
+                        <div class="sliderImg3 img"></div>
+                    </div>
+                </div> 
+                <div class="sliderButtons">
+                    <div class="sliderBtnl sliderBtn">
+                        <div></div>
+                    </div>
+                    <div class="sliderBtnR sliderBtn">
+                        <div></div>
+                    </div>
+                </div> 
+                <div class="publicity__btn">
+                    <button class="btn">Где купить ></button> 
                 </div>
-            </div> 
-            <div class="sliderButtons">
-                <div class="sliderBtnl sliderBtn">
-                    <div></div>
-                </div>
-                <div class="sliderBtnR sliderBtn">
-                    <div></div>
-                </div>
-            </div> 
-            <button class="btn">Где купить ></button> 
+            </div>
+            
             <div class="publicity__nav">
                 <ul class="nav__container">
                     <li>
@@ -74,26 +86,38 @@
             </div>
         </div>
         
-    
-        <div class="sales__slider">
-            <p class="slider__text">
-                получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>
-            </p>
+        <div class="sales__container">
+            <div class="sales__slider">
+                <p class="slider__text">
+                    получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>
+                </p>
+            </div>
         </div>
+        
     
         <div class="action">
             <div class="action__benefits">
                 <div class="benefits__container">
                     <div class="benefits__icon1 icon"></div>
-                    <div class="benefits__text">Доказанная  эффективность</div>
+                    <div class="benefits__text">
+                        Доказанная  
+                        эффективность
+                    </div>
                 </div>
                 <div class="benefits__container">
                     <div class="benefits__icon2 icon"></div>
-                    <div class="benefits__text">Новая дозировка 100 мг + 900 мг</div>
+                    <div class="benefits__text">
+                        Новая дозировка 
+                        100 мг + 900 мг
+                    </div>
                 </div>
                 <div class="benefits__container">
                     <div class="benefits__icon3 icon"></div>
-                    <div class="benefits__text">Удобный прием. Одна таблетка в сутки*</div>
+                    <div class="benefits__text">
+                        Удобный прием. 
+                        Одна таблетка в сутки*
+                    </div>
+                    <div data-title="при наведении/клике появляется мини всплывашка" class="prompt">i</div>
                 </div>
             </div>
             <div class="action__complex">
@@ -102,39 +126,60 @@
                     <p>Венарус показан для терапии симптомов хронических заболеваний вен (устранения 
                         и облегчения симптомов).</p>
                 </div>
-                <ul> <!--Возможно переделать-->
+                <ul> 
                     <li>
                         <a href="#">Подробнее ></a>
-                        <div class="complex__circlAnim ">
+                        <div class="complex__circlAnim circle1">
                             <div class="anim1"></div>
+                            <div class="anim1__circle"></div>
                         </div>
-                        <div class="complex__text">Помогает
-                            предотвратить судороги</div>
+                        <div class="complex__text">
+                            Помогает
+                            предотвратить судороги
+                        </div>
                     </li>
                     <li>
                         <a href="#">Подробнее ></a>
-                        <div class="complex__circlAnim anim2"></div>
-                        <div class="complex__text">Способствует
+                        <div class="complex__circlAnim circle2">
+                            <div class="anim2"></div>
+                        </div>
+                        <div class="complex__text">
+                            Способствует
                             снижению тяжести 
-                            в ногах</div>
+                            в ногах
+                        </div>
                     </li>
                     <li>
                         <a href="#">Подробнее ></a>
-                        <div class="complex__circlAnim anim3"></div>
-                        <div class="complex__text">Способствует снижению
-                            болевых ощущений</div>
+                        <div class="complex__circlAnim circle3">
+                            <div class="anim3"></div>
+                        </div>
+                        <div class="complex__text">
+                            Способствует снижению
+                            болевых ощущений
+                        </div>
                     </li>
                     <li>
                         <a href="#">Подробнее ></a>
-                        <div class="complex__circlAnim anim4"></div>
-                        <div class="complex__text">Помогает
-                            уменьшить отеки</div>
+                        <div class="complex__circlAnim circle4">
+                            <div class="anim4"></div>
+                        </div>
+                        <div class="complex__text">
+                            Помогает
+                            уменьшить отеки
+                        </div>
                     </li>
                     <li>
                         <a href="#">Подробнее ></a>
-                        <div class="complex__circlAnim anim5"></div>
-                        <div class="complex__text">Оказывает ангиопротекторное
-                            и венотонизурующее действие</div>
+                        <div class="complex__circlAnim circle5">
+                            <div class="anim5"></div>
+                        </div>
+                        <div class="complex__text">
+                            Оказывает
+                            ангиопротекторное
+                            и венотонизурующее
+                            действие
+                        </div>
                     </li>
                 </ul>
             </div>

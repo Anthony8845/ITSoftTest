@@ -16,7 +16,7 @@
     border-right-style: none;
     border-left-style: none;
     white-space: nowrap;
-    animation: slider__text 5s infinite linear;
+    animation: slider__text 7s infinite linear;
 }
 
 .slider__text::after {
@@ -28,7 +28,10 @@
     0% {
         transform: translateX(0);
     }
+    50% {
+        transform: translateX(-25%);
+    }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
 }
