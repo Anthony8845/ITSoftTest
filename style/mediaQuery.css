@@ -77,6 +77,20 @@
         top: -155px;
         left: 47%;
     }
+    .btn {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .sliderBtn {
+        position: relative;
+        border: 1px solid #fff;
+    }
+    .sliderBtn div {/**/
+        background: url('../img/arrowDesc.png') center/ contain no-repeat;
+        margin: 9px 8px ;
+        width: 13px;
+        height: 13px;
+    }
 }
 
 .publicity__header {
@@ -175,6 +189,20 @@
         justify-content: start;
         width: 30vw;
     }
+    .btn {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .sliderBtn {
+        position: relative;
+        border: 1px solid #fff;
+    }
+    .sliderBtn div {/**/
+        background: url('../img/arrowDesc.png') center/ contain no-repeat;
+        margin: 9px 8px ;
+        width: 13px;
+        height: 13px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -233,6 +261,10 @@
     .action__complex ul{
         width: 100%;
     }
+    .action__complex ul li {
+        position: relative;
+        padding: 60px 0;
+    }
     .action__benefits {
         justify-content: space-between;
         margin: 30px 0;
@@ -249,16 +281,41 @@
     .complex__text {
         white-space: pre-line;
     }
-    
+    .complex__circlAnim {
+        width: 70px;
+        height: 70px;
+    }
+    .anim1__circle{
+        left: -3.5px;
+        top: -3.5px;
+        width: 120%;
+        height: 120%;
+    }
+    .anim1 {
+        width: 60%;
+        height: 60%;
+    }
+    .anim1::before {
+        width: 100%;
+        height: 100%;
+    }
+    .anim1::after {
+        width: 100%;
+        height: 100%;
+    }
        
 }
 
 
 @media (min-width: 1190px) {
     body {
-        max-width: 1440px;
+        max-width: 100%;
+    }
+    .comtainer {
+        
     }
     .action__complex ul {
+        position: relative;
         font-size: 30px;
     }
     .action__complex ul li {
@@ -276,7 +333,7 @@
     }
     .circle2 {
         top: 50px;
-        left: 800px;
+        left: 700px;
     }
     .circle3 {
         top: -40px;
@@ -300,19 +357,29 @@
     .complex__text {
         padding-bottom: 30px;
     }
+    
     .anim1__circle {
-        left: 14px;
-        top: 17px;
+        left: -6px;
+        top: -6px;
         width: 104px;
         height: 104px;
     }
-    .anim {
-        
+    .anim1 {
+        left: 0px;
+        top: 0px;
+        width: 90px;
+        height: 90px;
     }
     .anim1::before {
-
+        left: 0px;
+        top: 0px;
+        width: 90px;
+        height: 90px;
     }
     .anim1::after {
-
+        left: 0px;
+        top: 0px;
+        width: 90px;
+        height: 90px;
     }
 }

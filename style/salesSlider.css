@@ -1,12 +1,11 @@
 .sales__slider {
     position: relative;
     left: -8px;
-    width: 99vw;
+    width: 110vw;
     overflow: hidden;
     font-size: 25px;
     color: #590D56;
     display: flex;
-    padding-left: -9px;
 }
 
 .slider__text {
