@@ -1,0 +1,70 @@
+.burgerMenu {
+    overflow: hidden;
+    max-width: 90%;
+    width: 90vw;
+    height: 700px;
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: -4px 1px 4px rgba(0,0,0,0.15), 
+    4px 1px 4px rgba(0,0,0,0.15);
+    border-radius: 0 0 10px 10px ;
+    
+}
+/* .burgerMenu:last-child {
+    align-items: start;
+} */
+.close {
+    cursor: pointer;
+    padding-bottom: 3%;
+    margin-bottom: auto;
+    margin-right: 3%;
+    width: 66px;
+    height: 15px;
+    background: url('../img/wave.png') center/ contain no-repeat;
+}
+.waveWave {
+    position: absolute;
+    border: 1px solid #590D56;
+    border-radius: 46%;
+    width: 7000px;
+    height: 7000px;
+    animation: 20s rotate linear infinite;
+}
+.burgerMenu ul{
+    margin-left: 10%;
+}
+.burgerMenu ul li {
+    cursor: pointer;
+    margin: 55px 0;
+    font-weight: bold;
+}
+
+
+.burgerWave1 {
+    top: 130px;
+    left: -2850px;
+}
+
+.burgerWave2 {
+    top: 200px;
+    left: -2600px;
+}
+
+.burgerWave3 {
+    top: 300px;
+    left: -2300px;
+}
+
+.burgerWave4 {
+    top: 400px;
+    left: -2900px;
+}
+
+.burgerWave5 {
+    top: 500px;
+    left: -2100px;
+}

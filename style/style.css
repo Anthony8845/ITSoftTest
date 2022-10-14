@@ -5,6 +5,7 @@
 @import url('./info.css');
 @import url('./buy.css');
 @import url('./wave.css');
+@import url('./burgerMenu.css');
 
 /* @import url('./mediaQuery.css'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
@@ -26,10 +27,12 @@ li {
 }
 
 body {
+    position: relative;
     font-family: 'Roboto';
     max-width: 500px;
     min-width: 320px;
     margin: 0 auto;
+    font-size: 16px;
 }
 
 .container {
@@ -37,12 +40,7 @@ body {
     margin: 10px;
 }
 
-.burgerMenu {
-    display: none;
-    position: absolute;
-    background-color: azure;
-    width: 320px;
-}
+
 
 .header {
     display: flex;
@@ -74,7 +72,7 @@ body {
 }
 
 .icon {
-    margin: 0 5px;
+    margin-right: 5px;
 }
 
 .sales__container {
@@ -124,8 +122,8 @@ body {
 }
 
 .header__burgerbtn div {
-    background-image: url('../img/wave.png');
-    background-size: contain;
+    background: url('../img/wave.png') center/ contain no-repeat;
+    
     width: 25px;
     height: 5px;
     margin: 1px 0;    
@@ -159,6 +157,7 @@ body {
 }
 
 .action {
+    overflow: hidden;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
@@ -219,6 +218,7 @@ body {
 .action__complex a {
 }
 .complex__circlAnim {
+    overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
@@ -290,14 +290,212 @@ body {
 }
 
 .anim2{
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+.a, .b {
+    opacity: 0.6;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 45%;
+    z-index: 0;
+    
+}
+.anim2 .a {
+    left: -151px;
+    top: -136px;
+    transform: rotate(30deg);
+    animation: 15s anim2a linear infinite;
+}
+.anim2 .b {
+    animation: 10s anim2a linear infinite;
+}
+
+@keyframes anim2a {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.anim3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
 
 }
-.anim3 {
+.a3, .b3 {
+    opacity: .7;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.a3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    animation: 1.5s anim3a linear infinite;
+}
+.b3 {
+    width: 5px;
+    height: 5px;
+    animation: 1.5s anim3b linear infinite;
+}
+
+@keyframes anim3a {
+    0% {
+        width: 40%;
+        height: 40%;
+    }
+    50% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 40%;
+        height: 40%;
+    }
+}
+@keyframes anim3b {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+    50% {
+        width: 20%;
+        height: 20%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
 }
 .anim4 {
+    opacity: 0.7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
 }
+.a4, .b4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.a4 {
+    left: 30px;
+    animation: .9s anim4a linear infinite;
+}
+.b4 {
+    left: -30px;
+    animation: .9s anim4b linear infinite;
+}
+@keyframes anim4a {
+    0% {
+        left: 55%;
+    }
+    50% {
+        left: 70%;
+    }
+    100% {
+        left: 55%;
+    }
+}
+@keyframes anim4b {
+    0% {
+        left: -55%;
+    }
+    50% {
+        left: -70%;
+    }
+    100% {
+        left: -55%;
+    }
+}
+
 .anim5 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
 }
+.anim5 hr {
+    width: 100%;
+    animation: 1s anim5hr linear infinite;
+}
+@keyframes anim5hr {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.a5, .b5 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-top-style: none;
+    border-right-style: none;
+}
+.a5 {
+    left: 25px;
+    transform: rotate(-135deg);
+    animation: 1s anim5a linear infinite;
+}
+.b5 {
+    left: 5px;
+    transform: rotate(45deg);
+    animation: 1s anim5b linear infinite;
+}
+
+@keyframes anim5a {
+    0% {
+        left: 55%;
+    }
+    50% {
+        left: 30%;
+    }
+    100% {
+        left: 55%;
+    }
+}
+@keyframes anim5b {
+    0% {
+        left: 5%;
+    }
+    50% {
+        left: 30%;
+    }
+    100% {
+        left: 5%;
+    }
+}
+
 
 .line {
     position: absolute;
@@ -309,8 +507,8 @@ body {
 }
 
 .footer {
+    overflow: hidden;
     max-width: 500px;
-    /* width: 95vw; */
     padding: 50px 0 10px 0;
     
 }
