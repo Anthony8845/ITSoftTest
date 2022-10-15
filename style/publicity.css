@@ -33,12 +33,18 @@
     display: none;
     background: url('../img/venarus450.png') center/ contain no-repeat;
 }
-.sliderBtnl div{
-    
+.sliderBtnl {
+    z-index: 10;
+}
+.sliderButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .sliderBtn {
     cursor: pointer;
     display: inline-block;
+    align-items: center;
     width: 34px;
     height: 34px;
     border: 1px solid #5B0E58;
