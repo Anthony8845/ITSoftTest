@@ -87,16 +87,16 @@ sliderBtnR.addEventListener('click', () => {
 
 sliderBtnL.addEventListener('click', () => {
     if(i == 1) {
-        imgPub1.classList.remove('sliderImg')
-        imgPub1.classList.add('sliderImg3')
-        imgPub2.classList.remove('sliderImg3')
-        imgPub2.classList.add('sliderImg')
-        --i
-    } else {
-        imgPub2.classList.remove('sliderImg')
-        imgPub2.classList.add('sliderImg3')
         imgPub1.classList.remove('sliderImg3')
         imgPub1.classList.add('sliderImg')
+        imgPub2.classList.remove('sliderImg')
+        imgPub2.classList.add('sliderImg3')
+        --i
+    } else {
+        imgPub2.classList.remove('sliderImg3')
+        imgPub2.classList.add('sliderImg')
+        imgPub1.classList.remove('sliderImg')
+        imgPub1.classList.add('sliderImg3')
         ++i
     }
 })
