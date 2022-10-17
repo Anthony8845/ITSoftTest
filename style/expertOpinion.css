@@ -63,6 +63,9 @@
 
 @keyframes expertSlider {
     0% {
+        transform: translateX(-1696px);
+    }
+    4% {
         transform: translateX(0);
     }
     25% {

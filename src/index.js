@@ -3,7 +3,7 @@ const burgerMenu = document.querySelector('.burgerMenu')
 const headerContainer = document.querySelector('.header__container')
 const close = document.querySelector('.close')
 
-const imgPubClass1 = document.querySelector('.sliderImg1')
+const imgPubClass1 = document.querySelector('.sliderImg')
 const imgPubClass2 = document.querySelector('.sliderImg3')
 const imgPub1 = document.querySelector('#imgPub1')
 const imgPub2 = document.querySelector('#imgPub2')
@@ -32,12 +32,10 @@ close.addEventListener('click', () => {
 let j = 0
 sliderBack.addEventListener('click', () => {
     if(j == 0) {
-        img1.style.background = 'url("../img/prodImage2.png") center/contain no-repeat'
-        img2.style.background = 'url("../img/prodImage1mob.png") center/contain no-repeat'
+        
         ++j
     } else {
-        img2.style.background = 'url("../img/prodImage2.png") center/contain no-repeat'
-        img1.style.background = 'url("../img/prodImage1mob.png") center/contain no-repeat'
+        
         --j
     }
     
@@ -59,12 +57,16 @@ sliderFront.addEventListener('click', () => {
 let i = 0;
 sliderBtnR.addEventListener('click', () => {
     if(i == 0) {
-        imgPub2.style.background = 'url("../img/venarus900.png")center/ contain no-repeat'
-        imgPub1.style.background = 'url("../img/venarus450.png")center/ contain no-repeat'
+        imgPub1.classList.remove('sliderImg')
+        imgPub1.classList.add('sliderImg3')
+        imgPub2.classList.remove('sliderImg3')
+        imgPub2.classList.add('sliderImg')
         ++i
     } else {
-        imgPub1.style.background = 'url("../img/venarus900.png")center/ contain no-repeat'
-        imgPub2.style.background = 'url("../img/venarus450.png")center/ contain no-repeat'
+        imgPub2.classList.remove('sliderImg')
+        imgPub2.classList.add('sliderImg3')
+        imgPub1.classList.remove('sliderImg3')
+        imgPub1.classList.add('sliderImg')
         --i
     }
   
@@ -72,12 +74,16 @@ sliderBtnR.addEventListener('click', () => {
 
 sliderBtnL.addEventListener('click', () => {
     if(i == 1) {
-        imgPub1.style.background = 'url("../img/venarus900.png")center/ contain no-repeat'
-        imgPub2.style.background = 'url("../img/venarus450.png")center/ contain no-repeat'
+        imgPub1.classList.remove('sliderImg')
+        imgPub1.classList.add('sliderImg3')
+        imgPub2.classList.remove('sliderImg3')
+        imgPub2.classList.add('sliderImg')
         --i
     } else {
-        imgPub2.style.background = 'url("../img/venarus900.png")center/ contain no-repeat'
-        imgPub1.style.background = 'url("../img/venarus450.png")center/ contain no-repeat'
+        imgPub2.classList.remove('sliderImg')
+        imgPub2.classList.add('sliderImg3')
+        imgPub1.classList.remove('sliderImg3')
+        imgPub1.classList.add('sliderImg')
         ++i
     }
 })
