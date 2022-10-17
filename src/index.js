@@ -32,24 +32,24 @@ close.addEventListener('click', () => {
 let j = 0
 sliderBack.addEventListener('click', () => {
     if(j == 0) {
-        img1.style.background = 'url("./img/prodImage2.png") center/contain no-repeat'
-        img2.style.background = 'url("./img/prodImage1mob.png") center/contain no-repeat'
+        img1.style.background = 'url("../img/prodImage2.png") center/contain no-repeat'
+        img2.style.background = 'url("../img/prodImage1mob.png") center/contain no-repeat'
         ++j
     } else {
-        img2.style.background = 'url("./img/prodImage2.png") center/contain no-repeat'
-        img1.style.background = 'url("./img/prodImage1mob.png") center/contain no-repeat'
+        img2.style.background = 'url("../img/prodImage2.png") center/contain no-repeat'
+        img1.style.background = 'url("../img/prodImage1mob.png") center/contain no-repeat'
         --j
     }
     
 })
 sliderFront.addEventListener('click', () => {
     if(j == 1) {
-        img2.style.background = 'url("./img/prodImage2.png") center/contain no-repeat'
-        img1.style.background = 'url("./img/prodImage1mob.png") center/contain no-repeat'
+        img2.style.background = 'url("../img/prodImage2.png") center/contain no-repeat'
+        img1.style.background = 'url("../img/prodImage1mob.png") center/contain no-repeat'
         --j
     } else {
-        img1.style.background = 'url("./img/prodImage2.png") center/contain no-repeat'
-        img2.style.background = 'url("./img/prodImage1mob.png") center/contain no-repeat'
+        img1.style.background = 'url("../img/prodImage2.png") center/contain no-repeat'
+        img2.style.background = 'url("../img/prodImage1mob.png") center/contain no-repeat'
         ++j
     }
     
@@ -59,12 +59,12 @@ sliderFront.addEventListener('click', () => {
 let i = 0;
 sliderBtnR.addEventListener('click', () => {
     if(i == 0) {
-        imgPub2.style.background = 'url("./img/venarus900.png")center/ contain no-repeat'
-        imgPub1.style.background = 'url("./img/venarus450.png")center/ contain no-repeat'
+        imgPub2.style.background = 'url("../img/venarus900.png")center/ contain no-repeat'
+        imgPub1.style.background = 'url("../img/venarus450.png")center/ contain no-repeat'
         ++i
     } else {
-        imgPub1.style.background = 'url("./img/venarus900.png")center/ contain no-repeat'
-        imgPub2.style.background = 'url("./img/venarus450.png")center/ contain no-repeat'
+        imgPub1.style.background = 'url("../img/venarus900.png")center/ contain no-repeat'
+        imgPub2.style.background = 'url("../img/venarus450.png")center/ contain no-repeat'
         --i
     }
   
@@ -72,12 +72,12 @@ sliderBtnR.addEventListener('click', () => {
 
 sliderBtnL.addEventListener('click', () => {
     if(i == 1) {
-        imgPub1.style.background = 'url("./img/venarus900.png")center/ contain no-repeat'
-        imgPub2.style.background = 'url("./img/venarus450.png")center/ contain no-repeat'
+        imgPub1.style.background = 'url("../img/venarus900.png")center/ contain no-repeat'
+        imgPub2.style.background = 'url("../img/venarus450.png")center/ contain no-repeat'
         --i
     } else {
-        imgPub2.style.background = 'url("./img/venarus900.png")center/ contain no-repeat'
-        imgPub1.style.background = 'url("./img/venarus450.png")center/ contain no-repeat'
+        imgPub2.style.background = 'url("../img/venarus900.png")center/ contain no-repeat'
+        imgPub1.style.background = 'url("../img/venarus450.png")center/ contain no-repeat'
         ++i
     }
 })
